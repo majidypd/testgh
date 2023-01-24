@@ -1,10 +1,6 @@
 name: CI
 
-on: 
-  push:
-      tags-ignore:        
-        - v2
-        - v1.*
+on: [push, workflow_call]
 
 
 jobs:
