@@ -2,9 +2,7 @@ name: deploy region-2
 
 on: 
   workflow_run:
-    workflows: ["CI"]
-    tags:
-      - v*.*.*
+    workflows: ["CI Deploy"]
     types: 
       - requested
 
