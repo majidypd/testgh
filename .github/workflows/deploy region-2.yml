@@ -3,9 +3,12 @@ name: deploy region-2
 on: 
   workflow_run:
     workflows: ["CI"]
+   branches:
+      - 'master'
     types: 
       - completed
-
+    tags:   
+      - v1.*
 
 jobs:
   deploy:
