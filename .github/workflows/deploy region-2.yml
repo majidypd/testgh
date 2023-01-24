@@ -7,7 +7,6 @@ on:
     types: 
       - requested
 
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
