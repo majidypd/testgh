@@ -2,11 +2,10 @@ name: deploy region-2
 
 on: 
   workflow_run:
-    branches:
-      - 'master'
     workflows: ["CI"]
+    branches: [master]
     types: 
-       - requested
+      - requested
 
 
 jobs:
