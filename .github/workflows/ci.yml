@@ -7,7 +7,6 @@ on:
         - v1.*
   workflow_call:
 
-
 jobs:
   test:
     runs-on: ubuntu-latest
