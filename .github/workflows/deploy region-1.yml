@@ -1,0 +1,18 @@
+name: deploy region-1
+
+on: 
+  workflow_run:
+    workflows: ["CI"]
+    types: 
+      - completed
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy region 1
+        run: echo "Start Deployment!"
