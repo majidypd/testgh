@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Greeting
-        run: echo "Hello, world!"
+      - name: Greeting TestCI
+        run: echo "Hello, world! TestCI"
 
       - name: test 
         run: go test ./...
