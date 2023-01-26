@@ -19,12 +19,10 @@ jobs:
       - name: java version
         run: java -version
 
-
       - name: Node Version
         run: node -v
 
-
-    - name: NPM Version
+      - name: NPM Version
         run: npm version
 
 
