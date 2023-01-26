@@ -9,8 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container:
-      image: golang:1.19
 
     steps:
       - uses: actions/checkout@v2
@@ -18,5 +16,7 @@ jobs:
       - name: Greeting TestCI
         run: echo "Hello, world! TestCI"
 
-      - name: test 
-        run: go version
+      - name: Hello world action step
+        uses: actions/sample@v2
+
+
