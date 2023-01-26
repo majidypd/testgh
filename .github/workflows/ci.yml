@@ -16,7 +16,11 @@ jobs:
       - name: Greeting TestCI
         run: echo "Hello, world! TestCI"
 
-      - name: Install OpenJDK8
+      - name: java version
         run: java -version
+
+
+      - name: Node Version
+        run: node -v
 
 
