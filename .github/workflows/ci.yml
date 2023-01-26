@@ -16,9 +16,11 @@ jobs:
       - name: Greeting TestCI
         run: echo "Hello, world! TestCI"
 
-      - name: Hello world action step
-        uses: ./ 
-        run: go version
-
+      - name: Install OpenJDK8
+        run: |
+            apt-get update && \
+            apt-get install -y openjdk-8-jdk && \
+            apt-get install -y ant && \
+            apt-get clean;
 
 
