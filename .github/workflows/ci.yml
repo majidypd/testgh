@@ -17,7 +17,7 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: Hello world action step
-        uses: actions/testgh@v2
+        uses: majidypd/testgh@v2
 
 
 
