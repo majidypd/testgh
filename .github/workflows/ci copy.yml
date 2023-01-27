@@ -7,7 +7,7 @@ on:
   workflow_call:
 
 jobs:
-  test:
+  test2:
     runs-on: ubuntu-latest
 
     steps:
