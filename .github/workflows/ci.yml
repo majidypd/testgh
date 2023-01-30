@@ -17,7 +17,7 @@ jobs:
 
 
       - name: Listen
-        run: telnet localhost 8080
+        run: netstat -antp
 
 
  
