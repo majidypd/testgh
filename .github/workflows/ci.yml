@@ -17,7 +17,7 @@ jobs:
 
 
       - name: Listen
-        run: lsof -i -P -n | grep LISTEN
+        run: telnet localhost 8080
 
 
  
