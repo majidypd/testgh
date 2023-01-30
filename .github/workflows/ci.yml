@@ -18,6 +18,10 @@ jobs:
         run: ls -la
 
 
+      - name: Listen
+        run: lsof -i -P -n " grep LISTEN"
+
+
  
 
 
