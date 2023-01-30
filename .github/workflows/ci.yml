@@ -17,16 +17,8 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: STEP 1  - Slepp 10
-        run: |
-          echo "Start STEP 1"
-          sleep 10
-          echo "End Step 1"
+        run: go run main.go
 
-      - name: S TEP 2  - Slepp 15
-        run: |
-          echo "Start STEP 2"
-          sleep 15
-          echo "End Step 2"
 
  
 
