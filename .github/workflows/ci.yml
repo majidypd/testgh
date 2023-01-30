@@ -16,6 +16,11 @@ jobs:
         run: ls -la
 
 
+
+      - name: SERVER
+        run: go run main.go &
+
+
       - name: Listen
         run: netstat -lnt
 
