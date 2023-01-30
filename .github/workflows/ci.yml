@@ -18,13 +18,10 @@ jobs:
 
 
       - name: SERVER
-        run: go run main.go &
+        run: |
+        go run main.go &
+        && netstat -lnt
 
 
-      - name: Listen
-        run: netstat -lnt
-
-
- 
 
 
