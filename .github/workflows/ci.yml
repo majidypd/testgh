@@ -14,7 +14,7 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: STEP 1  - Slepp 10
-        run: go run main.go
+        run: ls -la
 
 
  
