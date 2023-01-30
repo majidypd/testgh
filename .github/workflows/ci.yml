@@ -15,10 +15,16 @@ jobs:
       - name: STEP 1  - Slepp 10
         run: ls -la
 
+
+
       - name: SERVER
-        run: |
-          (go run main.go &) && netstat -lnt
+        run: go run main.go &
 
 
+      - name: Listen
+        run: netstat -lnt
+
+
+ 
 
 
