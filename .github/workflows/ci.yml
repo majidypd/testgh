@@ -13,7 +13,7 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: HASH
-        run:  echo ${{ github.head_ref }}.${{ github.sha }}
+        run:  echo ${{ GITHUB_REF#refs/heads/ }}.${{ github.sha }}
 
  
 
