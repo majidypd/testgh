@@ -13,7 +13,7 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: HASH
-        env :
+        env:
           COMMIT_HASH: "GH".${{ github.sha }}
         run:  echo $COMMIT_HASH
 
