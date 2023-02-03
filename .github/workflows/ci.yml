@@ -14,7 +14,7 @@ jobs:
 
       - name: HASH
         env:
-          COMMIT_HASH: "GH".${{ github.sha }}
+          COMMIT_HASH: "salam"
         run:  echo $COMMIT_HASH
 
  
