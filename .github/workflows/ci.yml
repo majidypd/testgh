@@ -13,7 +13,7 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: HASH
-        run:  echo ${{ steps.commit.outputs.short }}
+        run:  echo ${{ GITHUB_SHA }}
 
  
 
