@@ -12,14 +12,9 @@ jobs:
       - name: Greeting TestCI
         run: echo "Hello, world! TestCI"
 
-      - name: STEP 1  - Slepp 10
-        run: ls -la
+      - name: HASH
+        run:  ${{ steps.commit.outputs.short }}
 
-
-
-      - name: SERVER
-        run: |
-          netstat -lnt &&
-          go run main.go &
+ 
 
 
