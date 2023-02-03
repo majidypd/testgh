@@ -13,7 +13,9 @@ jobs:
         run: echo "Hello, world! TestCI"
 
       - name: HASH
-        run:  echo ${{ GITHUB_REF#refs/heads/ }}.${{ github.sha }}
+        env :
+          COMMIT_HASH: "GH".${{ github.sha }}
+        run:  echo $COMMIT_HASH
 
  
 
