@@ -12,11 +12,16 @@ jobs:
       - name: Greeting TestCI
         run: echo "Hello, world! TestCI"
 
-      - name: HASH
+      ################################
+      # Run Linter against code base #
+      ################################
+      - name: Lint Code Base
+        uses: github/super-linter@v4
         env:
-          COMMIT_HASH: "GH${{ github.sha }}"
-        run:  echo $COMMIT_HASH
-
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          TERRAFORM_TFLINT_CONFIG_FILE: ".tflint.hcl"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
 
 
