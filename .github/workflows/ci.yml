@@ -12,7 +12,7 @@ jobs:
   call-workflow-passing-data:
     uses: "./build.yml"
     with:
-      config-path: .github/labeler.yml
+      config-path: "TESTCONFIGPATH"
 
 
 
