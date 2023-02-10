@@ -2,9 +2,7 @@ name: deploy region-1
 
 on: 
   workflow_run:
-    workflows: ["CI"]
-    branches:
-      - 'master'
+    workflows: [" CI ALL AMAMDA(ss)"]
     types: 
       - completed
 
