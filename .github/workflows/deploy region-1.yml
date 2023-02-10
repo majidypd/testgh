@@ -14,5 +14,5 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Deploy region 1
-        run: echo ${{ github.event.workflow_run.enviroment }}
+        run: echo ${{ github.event.workflow_run.status }}
 
