@@ -2,10 +2,9 @@ name: deploy region-1
 
 on: 
   workflow_run:
-    workflows: ["CI ALL mamad (all)"]
+    workflows: ["Reusable workflow example"]
     types: 
       - completed
-
 
 jobs:
   deploy:
