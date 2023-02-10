@@ -10,6 +10,10 @@ jobs:
       - uses: actions/checkout@v3
 
   call-workflow-passing-data:
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
     uses: ./.github/workflows/build.yml
     with:
       config-path: "TESTCONFIGPATH"
