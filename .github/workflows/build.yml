@@ -14,9 +14,6 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: ${{ secrets.token }}
-        configuration-path: ${{ inputs.config-path }}
-    - name: Run
-      run: echo $configuration-path
+      - uses: actions/checkout@v3
+      - name: Run ECHO
+        run: echo $configuration-path
