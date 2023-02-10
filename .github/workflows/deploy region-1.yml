@@ -2,7 +2,7 @@ name: deploy region-1
 
 on: 
   workflow_run:
-    workflows: [CI ALL]
+    workflows: [Reusable workflow example]
     types: 
       - completed
 
