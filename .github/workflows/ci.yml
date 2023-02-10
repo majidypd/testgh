@@ -9,18 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Greeting TestCI
-        run: echo "Hello, world! TestCI"
+  call-workflow-passing-data:
+    uses: "./build.yml"
+    with:
+      config-path: .github/labeler.yml
 
-      ################################
-      # Run Linter against code base #
-      ################################
-      - name: Lint Code Base
-        uses: github/super-linter/slim@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          TERRAFORM_TFLINT_CONFIG_FILE: ".tflint.hcl"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
- 
+
+
 
 
