@@ -1,4 +1,4 @@
-name: CI ALL AMAMDA(ss)
+name: CI ALL
 
 on:
   push:
