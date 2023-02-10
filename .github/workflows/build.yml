@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run ECHO
-        run: echo {{ $configuration-path }}
+        run: echo {{ $config-path }}
