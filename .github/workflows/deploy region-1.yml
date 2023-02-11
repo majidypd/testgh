@@ -16,6 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Deploy region 1
+      - name: Deploy ${{ matrix.region }}
         run: echo ${{ github.event.workflow_run.status }}
 
