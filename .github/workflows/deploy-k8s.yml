@@ -10,11 +10,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: prod
-    strategy:
-      matrix:
-        region: ["eu-central-1", "ap-sotheast-1"]
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deploy ${{ matrix.region }}
+      - name: Deploy "ap-sotheast-1"
+        run: echo ${{ github.event.workflow_run.status }}
+
+      - name: Deploy eu-central-1
         run: echo ${{ github.event.workflow_run.status }}
