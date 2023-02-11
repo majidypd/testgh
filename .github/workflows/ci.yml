@@ -12,11 +12,10 @@ jobs:
   call-workflow-passing-data:
     strategy:
       matrix:
-        version: [10, 12, 14]
+        region: ["er-central-1", "ap-sotheast-1"]
     uses: ./.github/workflows/reusable_build.yml
     with:
-      config-path: "TESTCONFIGPATH"
-      version: ${{ matrix.version }}
+      region: ${{ matrix.region }}
 
 
 
