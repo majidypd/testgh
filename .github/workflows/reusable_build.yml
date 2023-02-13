@@ -5,11 +5,15 @@ on:
     inputs:
       region:
         required: false
-        type: string
+        type: string      
+        roll:
+        required: true
+        type: bool
 
 jobs:
   triage:
     runs-on: ubuntu-latest
+    if: inputs.roll
     steps:
       - uses: actions/checkout@v3
       - name: Run ${{ inputs.region }}
