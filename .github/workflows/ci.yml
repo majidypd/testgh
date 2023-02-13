@@ -11,5 +11,5 @@ jobs:
     uses: ./.github/workflows/reusable_build.yml
     with:
       region: ${{ matrix.region }}
-      roll: false
+      roll: true
 
