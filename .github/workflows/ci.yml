@@ -5,6 +5,7 @@ on:
 
 jobs:
   call-workflow-passing-data:
+    if: "false" == "true" 
     strategy:
       matrix:
         region: ["er-central-1", "ap-sotheast-1"]
