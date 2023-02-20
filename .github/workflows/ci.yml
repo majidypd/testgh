@@ -3,8 +3,6 @@ name: CI ALL mamad (all)
 on:
   push:
 
-env: 
-  CHAT_TAG: ${{  github.sha }}
 
 
 jobs:

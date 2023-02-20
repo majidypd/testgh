@@ -10,6 +10,9 @@ on:
         required: true
         type: boolean
 
+env: 
+  CHAT_TAG: ${{  github.sha }}
+
 jobs:
   triage:
     runs-on: ubuntu-latest
