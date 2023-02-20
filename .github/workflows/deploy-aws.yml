@@ -13,7 +13,7 @@ jobs:
 
       - name: Deploy "TESTTT  TAG"
         env: 
-          GITHUB_TAG: "2211"
+          GITHUB_TAG: ${{  github.ref_name }}
         run:  ./deploy.sh
 
   # deploy-k8s:
