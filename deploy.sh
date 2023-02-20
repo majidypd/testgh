@@ -14,4 +14,5 @@ else
    exitMessage 0 "not a valid tag, not deploying"
 fi
 
+echo "after xxxxx"
 echo $tag
