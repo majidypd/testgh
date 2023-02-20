@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 env: 
-  GITHUB_TAG: ${{  github.sha }}
+  CHAT_TAG: ${{  github.sha }}
 
 jobs:
   deploy-aws:
