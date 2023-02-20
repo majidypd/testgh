@@ -8,25 +8,25 @@ on:
 jobs:
   deploy-aws:
     runs-on: ubuntu-latest
-    environment: prod2
+    environment: prod26
     strategy:
       matrix:
-        region: ["eu-central-1", "ap-sotheast-1"]
+        region: ["eu-central-1"]
     steps:
       - uses: actions/checkout@v3
 
       - name: Deploy ${{ matrix.region }}
-        run: echo ${{ github.event.workflow_run.status }}
+        run: echo ./deploy.sh
 
-  deploy-k8s:
-    runs-on: ubuntu-latest
-    environment: prod2
-    strategy:
-      matrix:
-        region: ["eu-central-1", "ap-sotheast-1"]
-    steps:
-      - uses: actions/checkout@v3
+  # deploy-k8s:
+  #   runs-on: ubuntu-latest
+  #   environment: prod2
+  #   strategy:
+  #     matrix:
+  #       region: ["eu-central-1", "ap-sotheast-1"]
+  #   steps:
+  #     - uses: actions/checkout@v3
 
-      - name: Deploy ${{ matrix.region }}
-        run: echo ${{ github.event.workflow_run.status }}
+  #     - name: Deploy ${{ matrix.region }}
+  #       run: echo ${{ github.event.workflow_run.status }}
 
