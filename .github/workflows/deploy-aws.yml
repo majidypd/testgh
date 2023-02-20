@@ -16,6 +16,8 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Deploy ${{ matrix.region }}
+        env: 
+          GITHUB_TAG: "2211"
         run:  ./deploy.sh
 
   # deploy-k8s:
