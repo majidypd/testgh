@@ -5,7 +5,6 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    if: github.repository == 'octo-org/octo-repo-prod'
     strategy:
       matrix:
         region: ["er-central-1", "ap-sotheast-1"]
