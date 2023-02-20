@@ -17,4 +17,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run ${{ inputs.region }}
-        run: echo ${{ inputs.region }}
+      - name: Deploy "TESTTT  TAG"
+        run:  ./deploy.sh
