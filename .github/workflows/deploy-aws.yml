@@ -1,18 +1,18 @@
 name: deploy STG
 on: 
   workflow_dispatch:
-  inputs:
-  region:
-    description: 'Region for deployment'
-    type: choice
-    options:
-      - 'eu-central-1'
-      - 'us-east-1'
-      - 'me-south-1'
-      - 'ap-southeast-1'
-      - 'ap-south-1'
-    required: true
-    default: 'eu-central-1'
+    inputs:
+      region:
+        description: 'Region for deployment'
+        type: choice
+        options:
+          - 'eu-central-1'
+          - 'us-east-1'
+          - 'me-south-1'
+          - 'ap-southeast-1'
+          - 'ap-south-1'
+        required: true
+        default: 'eu-central-1'
 
 
 env: 
