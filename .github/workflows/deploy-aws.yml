@@ -27,6 +27,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      ​​- name: Set env
+        run: echo "GIT_DESCRIBE=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Check output
+        env:
+          TRAVIS_TAG: ${{ github.ref_name }}
+        run: |
+          echo "GIT_DESCRIBE:"
+          echo $GIT_DESCRIBE
+          echo "TRAVIS_TAG:"
+          echo $TRAVIS_TAG
       - name: Deploy "TESTTT  TAG"
         run:  make run
 
