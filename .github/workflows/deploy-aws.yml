@@ -16,7 +16,7 @@ on:
 
 
 env: 
-  CHAT_TAG: ${{  github.sha }}
+  CHAT_TAG: ${{  github.ref_name }}
 
 jobs:
   deploy-aws:
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Deploy "TESTTT  TAG"
-        run:  ./deploy.sh
+        run:  make run
 
   # deploy-k8s:
   #   runs-on: ubuntu-latest
