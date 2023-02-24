@@ -11,7 +11,7 @@ on:
         type: boolean
 
 env: 
-  CHAT_TAG: ${{  github.ref_name }}
+  CHAT_TAG: "aaa${{  github.ref_name }}"
 
 jobs:
   triage:
