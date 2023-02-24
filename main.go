@@ -18,6 +18,10 @@ func main()  {
 
 	d2 := os.Getenv("CHAT_TAG")
 	fmt.Println("CHAT_TAG RECIVED in ENV:", d2)
+
+
+	d3 := os.Getenv("CHAT_SHA")
+	fmt.Println("CHAT_SHA RECIVED in ENV:", d3)
 }
 
 // func X(w http.ResponseWriter, r *http.Request){

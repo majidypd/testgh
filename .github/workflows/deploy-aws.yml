@@ -17,6 +17,7 @@ on:
 
 env: 
   CHAT_TAG: ${{  github.ref_name }}
+  CHAT_SHA: ${{  github.sha }}
 
 jobs:
   deploy-aws:
