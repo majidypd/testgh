@@ -12,7 +12,7 @@ on:
 
 env: 
   CHAT_TAG: "aaa${{  github.ref_name }}"
-  TEST_VARIABLE_T: env.TEST_VARIABLE_T
+  TEST_VARIABLE_T: ${{ env.TEST_VARIABLE_T }}
 
 jobs:
   triage:
