@@ -16,7 +16,7 @@ env:
 
 jobs:
   triage:
-    enviroment: prod
+    environment: prod
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
