@@ -23,6 +23,6 @@ jobs:
 
       - name: Deploy "TESTTT  TAG"
         env:
-          TEST_VARIABLE_T: ${{ env.TEST_VARIABLE_T }}
+          TEST_VARIABLE_T: ${{ vars.TEST_VARIABLE_T }}
         run:  ./deploy.sh
 
