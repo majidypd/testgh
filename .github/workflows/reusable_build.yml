@@ -12,7 +12,7 @@ on:
 
 env: 
   CHAT_TAG: "aaa${{  github.ref_name }}"
-  TEST_VARIABLE_T: ${{ env.TEST_VARIABLE_T }}
+  
 
 jobs:
   triage:
@@ -21,4 +21,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Deploy "TESTTT  TAG"
+        env:
+          TEST_VARIABLE_T: ${{ env.TEST_VARIABLE_T }}
         run:  ./deploy.sh
