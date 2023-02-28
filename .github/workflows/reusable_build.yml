@@ -25,3 +25,4 @@ jobs:
         env:
           TEST_VARIABLE_T: ${{ env.TEST_VARIABLE_T }}
         run:  ./deploy.sh
+
