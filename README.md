@@ -1,1 +1,1 @@
-[![BUILD Status]https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)
+[![BUILD Status](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)
