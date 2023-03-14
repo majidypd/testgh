@@ -1,1 +1,1 @@
-[![CI](https://github.com/majidypd/testgh/actions/workflows/ci2.yml/badge.svg)](https://github.com/majidypd/testgh/actions/workflows/ci2.yml)
+[![CI ALL mamad (all)](https://github.com/majidypd/testgh/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/majidypd/testgh/actions/workflows/ci.yml)
