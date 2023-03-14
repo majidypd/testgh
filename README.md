@@ -1,1 +1,1 @@
-[![BUILD Status](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)
+[![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)
