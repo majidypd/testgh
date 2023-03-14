@@ -5,7 +5,7 @@ exitMessage() {
    exit "${1}"
 }
 
-
+exit -1
 
 tag=${GITHUB_TAG-}
 echo "recived:"
