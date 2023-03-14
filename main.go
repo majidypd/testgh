@@ -11,7 +11,7 @@ func main()  {
 	// fmt.Println("server is running ...")
 	// http.HandleFunc("/",X)
 	// http.ListenAndServe(":8080",nil)
-	kk
+	
 
 	d := os.Getenv("TEST_VARIABLE_T")
 	fmt.Println("TEST_VARIABLE_T RECIVED in ENV:", d)

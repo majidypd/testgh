@@ -9,7 +9,7 @@ jobs:
   call-workflow-passing-data:
     strategy:
       matrix:
-        region: ["er-central-1", "ap-sotheast-1"]
+        region: ["er-central-1"]
     uses: ./.github/workflows/reusable_build.yml
     with:
       region: ${{ matrix.region }}
