@@ -1,1 +1,1 @@
-[![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)](https://github.com/majidypd/testgh/actions/workflows/ci.yaml/badge.svg)
+[![CI](https://github.com/majidypd/testgh/actions/workflows/ci2.yml/badge.svg)](https://github.com/majidypd/testgh/actions/workflows/ci2.yml)
